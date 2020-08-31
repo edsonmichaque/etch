@@ -31,8 +31,13 @@ header#banner {
     margin: 25px 0;
 }
 
-header#banner a {
+/* header#banner a {
     color: #313a3d;
+    text-decoration: none;
+} */
+
+header#banner h2 a {
+    color:#c24e00;
     text-decoration: none;
 }
 
@@ -45,8 +50,9 @@ header#banner h2 {
     display: inline;
     font-size: 21px;
     /* font-size: 2.1rem; */
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     margin: 0 8px 0 0;
+    font-size: 1.9rem;
 }
 
 header#banner nav {
@@ -56,7 +62,7 @@ header#banner nav {
 header#banner nav ul {
     list-style-type: none;
     font-size: 1.05em;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
     margin: 0;
     padding: 0;
 }
@@ -111,7 +117,7 @@ main#content p {
 
 main#content hr {
     height: 1px;
-    border: 1;
+    border: 0;
     background: #d8d8d8;
 }
 
