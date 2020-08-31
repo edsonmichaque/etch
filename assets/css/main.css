@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'FiraGO';
+    src: url('../FiraGO-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'FiraMono';
+    src: url('../FiraMono-Regular.otf')  format('opentype'); /* Safari, Android, iOS */
+}
 html {
     font-size: 62.5%;
 }
@@ -9,7 +18,8 @@ html {
 body {
     font-size: 16px;
     font-size: 1.6rem;
-    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    /* font-family: 'Helvetica Neue', 'Arial', sans-serif; */
+    font-family: 'FiraGO', 'Arial', sans-serif;
     color: #313a3d;
     width: 100%;
     margin: 0 auto;
@@ -27,13 +37,15 @@ header#banner a {
 }
 
 header#banner a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #313a3d;
 }
 
 header#banner h2 {
     display: inline;
     font-size: 21px;
-    font-size: 2.1rem;
+    /* font-size: 2.1rem; */
+    font-size: 1.5em;
     margin: 0 8px 0 0;
 }
 
@@ -59,7 +71,7 @@ header#banner nav ul li a {
 }
 
 main#content a {
-    color: #007dfa;
+    /* color: #007dfa; */
     text-decoration: none;
 }
 
@@ -79,7 +91,7 @@ main#content h6 {
 
 main#content h3 {
     font-size: 19px;
-    font-size: 1.9rem;
+    /* font-size: 1.9rem; */
 }
 
 main#content h1 + p,
@@ -94,11 +106,12 @@ main#content h6 + p {
 main#content p {
     color: #394548;
     margin: 16px 0;
+    text-align: justify;
 }
 
 main#content hr {
     height: 1px;
-    border: 0;
+    border: 1;
     background: #d8d8d8;
 }
 
@@ -138,7 +151,8 @@ main#content ul#posts li a:hover small {
 main#content header#post-header h1 {
     display: block;
     font-size: 23px;
-    font-size: 2.3rem;
+    /* font-size: 2.3rem; */
+    /* font-size: 1.9rem; */
     line-height: 1.15;
 }
 
@@ -231,7 +245,7 @@ main#content figure figcaption p {
 
 main#content code,
 main#content pre {
-    font-family: 'Menlo', monospace;
+    font-family: 'FiraMono', monospace;
 }
 
 main#content code {
@@ -265,3 +279,4 @@ footer#footer {
     color: #949494;
     margin: 40px 0;
 }
+

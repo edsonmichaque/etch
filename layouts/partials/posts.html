@@ -2,9 +2,10 @@
 <ul id="posts">
 {{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
     <li>
-        <a href="{{ .Permalink }}">
+        
+        <small><time><pre style="display: inline;">{{ .Date.Format "02 Jan 2006" }}</pre></time></small>
+        <a href="{{ .Permalink }}">    
             {{- .Title -}}
-            <small><time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
         </a>
     </li>
 {{ end }}
